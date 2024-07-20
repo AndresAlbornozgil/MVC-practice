@@ -11,14 +11,14 @@ router.get('/', async (req, res) => {
         return task.get({ plain: true });
     })
     console.log(allTasks);
-    console.log('========================');
+    console.log('==================');
     console.log(sanitizedData);
     // const testData = {
     //     name: "Test Work",
     //     description: "Work to do",
     //     status: "In progress"
     // };
-    res.render('To do', { testData });
+    res.render('todo', { sanitizedData });
 })
 
 // localhost:3001/pikachu
